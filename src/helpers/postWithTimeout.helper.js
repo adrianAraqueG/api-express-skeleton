@@ -17,7 +17,7 @@ const postWithTimeout = async (url, data, jwt, timeout = 7000) => {
     });
 
     const timeoutPromise = new Promise((_, reject) =>
-        setTimeout(() => reject(new HttpCustomError.GatewayTimeotError()), timeout)
+        setTimeout(() => reject(new HttpCustomError.GatewayTimeoutError()), timeout)
     );
 
     try {
