@@ -11,7 +11,7 @@ const getWithTimeout = async (url, timeout = 7000) => {
     const fetchPromise = fetch(url);
 
     const timeoutPromise = new Promise((_, reject) =>
-        setTimeout(() => reject(new HttpCustomError.GatewayTimeotError()), timeout)
+        setTimeout(() => reject(new HttpCustomError.GatewayTimeoutError()), timeout)
     );
 
     try {
