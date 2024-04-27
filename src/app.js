@@ -34,7 +34,7 @@ class App {
      */
     listen() {
         this.App.listen(this.PORT, () => {
-            console.log(`-> erp-aux-api \n-> Running on ${this.PORT}`);
+            console.log(`-> your-app-name \n-> Running on ${this.PORT}`);
         });
     }
 }

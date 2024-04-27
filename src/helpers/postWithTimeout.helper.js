@@ -26,7 +26,11 @@ const postWithTimeout = async (url, data, jwt, timeout = 7000) => {
         
         /**
          * Esta configuración dependerá del esquema
-         * de la respuesta que esperas
+         * de la respuesta que esperas. Si realizas
+         * peticiones a diferentes aplicaciones sin
+         * una convención única de respuestas debes 
+         * realizar este mapeo en el servicio 
+         * (u otro lugar) donde utilices este módulo.
          */
         const statusCode = response.status;
         const result = await response.json();

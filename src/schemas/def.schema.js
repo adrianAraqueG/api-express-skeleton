@@ -12,8 +12,23 @@ import Joi from 'joi';
  */
 
 
+
 /**
  * BodySchemas@Default
+ * 
+ */
+
+
+
+/**
+ * HeadersSchemas@Default
+ * 
+ */
+
+
+
+/**
+ * CookiesSchemas@Default
  * 
  */
 
@@ -25,6 +40,12 @@ const defaultSchema = {
         
     },
     body:{
+
+    },
+    headers:{
+
+    },
+    cookies:{
 
     }
 }
